@@ -6,6 +6,6 @@ edition = "2018"
 
 [dependencies]
 bitcoincore-rpc = { path = "../client", features = ["rand"] }
-bitcoin = { version = "0.32.0", features = ["serde", "rand"] }
+bitcoin = { git = "https://github.com/jlest01/rust-bitcoin.git", branch = "bip352-silentpayments-module-v0", features = ["serde", "rand"] }
 lazy_static = "1.4.0"
 log = "0.4"
